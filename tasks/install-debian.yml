@@ -32,7 +32,7 @@
 
 - name: Install InfluxDB packages [Debian/Ubuntu]
   apt: 
-    name: influxdb
+    name: "{{ influxdb_package_name }}"
     state: latest
     update_cache: yes
     cache_valid_time: 3600

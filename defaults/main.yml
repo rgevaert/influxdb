@@ -1,4 +1,7 @@
 ---
+# Package name
+influxdb_package_name: influxdb
+
 # Channel of InfluxDB to install (stable, unstable, nightly)
 influxdb_install_version: stable
 
