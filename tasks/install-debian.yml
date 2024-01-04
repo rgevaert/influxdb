@@ -40,7 +40,7 @@
 
 - name: Import InfluxData GPG signing key [Debian/Ubuntu]
   apt_key:
-    url: https://repos.influxdata.com/influxdb.key
+    url: https://repos.influxdata.com/influxdata-archive_compat.key
     state: present
   when: influxdb_install_url is not defined or influxdb_install_url == None
 
