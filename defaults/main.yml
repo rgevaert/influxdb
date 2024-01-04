@@ -1,4 +1,12 @@
 ---
+# Required packages
+python2_packages:
+- python-apt
+- python-httplib2
+python3_packages:
+- python3-apt
+- python3-httplib2
+
 # Package name
 influxdb_package_name: influxdb
 
