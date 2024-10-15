@@ -50,7 +50,7 @@
       state: present
   - name: Install Influxdb packages [Debian/Ubuntu]
     apt:
-      name: influxdb
+      name: influxdb2
       state: latest
       update_cache: yes
       cache_valid_time: 3600
