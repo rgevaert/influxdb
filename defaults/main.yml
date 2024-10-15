@@ -14,6 +14,7 @@ influxdb_package_name: influxdb
 # Channel of InfluxDB to install (stable, unstable, nightly)
 influxdb_distribution_release: "{{ ansible_distribution_release }}"
 influxdb_install_version: stable
+influxdb_influxdata_base_url: "https://repos.influxdata.com"
 
 # If multiple servers are specified, whether to create a clustered configuration
 # NOTE:
