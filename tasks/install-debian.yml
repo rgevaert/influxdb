@@ -46,7 +46,7 @@
       dest: /etc/apt/trusted.gpg.d/influxdata-archive_compat.asc
   - name: Add InfluxData repository [Debian/Ubuntu]
     apt_repository:
-      repo: deb [signed-by=/etc/apt/trusted.gpg.d/influxdata-archive_compat.asc] {{ influxdb_influxdata_base_url }}/{{ debian | lower }} {{ influxdb_distribution_release }} {{ influxdb_install_version }}
+      repo: deb [signed-by=/etc/apt/trusted.gpg.d/influxdata-archive_compat.asc] {{ influxdb_influxdata_base_url }}/debian {{ influxdb_distribution_release }} {{ influxdb_install_version }}
       state: present
   - name: Install Telegraf packages [Debian/Ubuntu]
     apt:
