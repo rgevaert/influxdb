@@ -7,10 +7,12 @@ python3_packages:
 - python3-apt
 - python3-httplib2
 
+
 # Package name
 influxdb_package_name: influxdb
 
 # Channel of InfluxDB to install (stable, unstable, nightly)
+influxdb_distribution_release: "{{ ansible_distribution_release }}"
 influxdb_install_version: stable
 
 # If multiple servers are specified, whether to create a clustered configuration
