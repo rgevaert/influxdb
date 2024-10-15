@@ -48,7 +48,7 @@
     apt_repository:
       repo: deb [signed-by=/etc/apt/trusted.gpg.d/influxdata-archive_compat.asc] {{ influxdb_influxdata_base_url }}/debian {{ influxdb_distribution_release }} {{ influxdb_install_version }}
       state: present
-  - name: Install Telegraf packages [Debian/Ubuntu]
+  - name: Install Influxdb packages [Debian/Ubuntu]
     apt:
       name: influxdb
       state: latest
